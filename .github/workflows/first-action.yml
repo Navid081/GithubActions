@@ -1,0 +1,10 @@
+name: First Workflow # namn på workflow
+on: workflow_dispatch # event, trigger
+jobs:
+  first-job:  # namn
+    runs-on: ubuntu-latest # runner, vilken miljö stegen ska köras i
+    steps:
+      - name: print greeting
+        run: echo "Hello World"
+      - name: print goodbye
+        run: echo "Done - Bye!"
